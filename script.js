@@ -2,7 +2,7 @@ function loadingAlert (){
     alert ("Loading weather report")
 }
 
-var alert = document.querySelector("#cookiecontainer")
+// var alert = document.querySelector("#cookiecontainer")
 
 function removeAlert(element) {
     // var alertbox =  document.getElementById(element)
