@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navContainer">
+            <h1>DojoWeather</h1>
+            <div class="navlinks">
+                <a href="#" onclick="loadingAlert()">Burbank</a>
+                <a href="#" onclick="loadingAlert()">Chicago</a>
+                <a href="#" onclick="loadingAlert()">Dallas</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="subheader">
+            <h2>San Jose</h2>
+            <div class="tempselect">
+                <p>show temperature in</p>
+                <select name="Temperature" id="Temp">
+                    <option value="Celcius"id="cel">°C</option>
+                    <option value="Fahrenheit" id="fahr">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+                <div class="weekday">
+                    <h3>Today</h3>
+                    <img src="./assets/some_rain.png" alt="rain">
+                    <p>some rain</p>
+                    <div class="highLow">
+                        <p class= "redText high0">23.9°</p>
+                        <p class="blueText low0">18.3°</p>
+                    </div>
+                </div>
+                <div class="weekday">
+                    <h3>Tomorrow</h3>
+                    <img src="./assets/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="highLow">
+                        <p class= "redText high1">26.7°</p>
+                        <p class="blueText low1">18.9°</p>
+                    </div>
+                </div>
+                <div class="weekday">
+                    <h3>Friday</h3>
+                    <img src="./assets/some_clouds.png" alt="cloudy">
+                    <p>some clouds</p>
+                    <div class="highLow">
+                        <p class= "redText high2">20.6°</p>
+                        <p class="blueText low2">16.1°</p>
+                    </div>
+                </div>
+                <div class="weekday">
+                    <h3>Saturday</h3>
+                    <img src="./assets/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="highLow">
+                        <p class= "redText high3">25.6°</p>
+                        <p class="blueText low3">21.1°</p>
+                    </div>
+                </div>
+        </div>
+        <div id="cookiecontainer">
+            <img src="./assets/cookie.png" alt="">
+            <div class="cookietext">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media feature and to analyse our traffic.<a href="#">Read more...</a> </p>
+            </div>
+            <div class="cookiebutton">
+                <button id ="cbutton" onclick="removeAlert(this.id)">
+                    I Accept
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
